@@ -104,6 +104,20 @@ const HandleLogout = async(req, res) => {
     }
 }
 
+const HandlePatLogout = async(req, res) => {
+    try{
+        const {email} = req.body;
+        const user = await patUser.findOne({email})
+        if(!user){
+            return res.status(400).json({message: "USER NOT EXISTS"})
+        }
+        user.isLoggedin = false;
+        await user.save();
+        return res.status(200).json({message: "LOGOUT SUCCESSFULLY"})
+    } catch(err){
+        console.log("SOMETHING WENT WRONG", err);
+    }
+}
 const HandleUpdate = async(req, res) => {
     try{
         const{email, specialization, docLocation, docPhoneNumber, docBiography} = req.body;
@@ -129,5 +143,6 @@ module.exports = {
     HandlePatSignup,
     HandlePatLogin,
     HandleLogout,
-    HandleUpdate
+    HandleUpdate,
+    HandlePatLogout
 }

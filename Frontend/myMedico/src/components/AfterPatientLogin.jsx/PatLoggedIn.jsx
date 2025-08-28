@@ -7,6 +7,8 @@ import { useNavigate } from 'react-router-dom'
 
 const PatLoggedIn = () => {
   const [patuser, setPetUser] = useState(null);
+    const [successMessage, setSuccessMessage] = useState(null);
+    const [errorMessage, setErrorMessage] = useState(null);
   const navigate = useNavigate()
   useEffect(()=>{
     const storedUser = localStorage.getItem("user");
@@ -14,6 +16,29 @@ const PatLoggedIn = () => {
       setPetUser(JSON.parse(storedUser))
     }
   }, [])
+  const HandlePatLogout = async (e) =>{
+    e.preventDefault();
+    setErrorMessage(null);
+    setSuccessMessage(null);
+    try{
+      const response = await fetch("http://localhost:8000/pat-logout", {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({email: patuser.email})
+      })
+      if(response.ok){
+        localStorage.removeItem("user")
+        localStorage.removeItem("token")
+        setSuccessMessage("Logout Successfull")
+        setErrorMessage(null);
+        navigate('/')
+      }
+    } catch(err){
+        setErrorMessage("UNABLE TO LOGOUT", err)
+    }
+  }
   if(!patuser){
     return <p>Please Login First</p>
   }
@@ -32,9 +57,17 @@ const PatLoggedIn = () => {
           <p className="navbar-btn">Appointment</p>
         </div>
         <div className="pat-right-section">
-          <button>Logout</button>
+          <button onClick={HandlePatLogout}>Logout</button>
         </div>
       </nav>
+            <div className="status-message">
+        {errorMessage && (
+          <p className="profile-error-message">{errorMessage}</p>
+        )}
+        {successMessage && (
+          <p className="profile-success-message">{successMessage}</p>
+        )}
+      </div>
       <div className="pat-search-bar">
           <h1>Search Doctor</h1>
           <div className="doctor-search-option">

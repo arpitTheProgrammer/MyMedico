@@ -20,11 +20,13 @@ const Home = () => {
     const storedUser = localStorage.getItem("docuser")
     if(storedUser){
       setDocUser(JSON.parse(storedUser))
-      navigate('/doc-home')
       console.log("user", storedUser);
     }
   }, [navigate])
 
+  if(docuser){
+    navigate('/doc-home')
+  }
   useEffect(()=>{
     const storedUser = localStorage.getItem("user")
     if(storedUser){
