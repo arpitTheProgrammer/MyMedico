@@ -1,0 +1,93 @@
+.container-edit-profile{
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    position: relative;
+    top: -40px;
+}
+
+.edit-profile-image{
+    /* border: 2px solid black; */
+    width: 400px;
+
+}
+
+
+.edit-profile-image img{
+    height: 120px;
+}
+
+.edit-profile-image img:hover{
+    cursor: pointer;
+}
+
+.phone-number{
+    float: right;
+    display: grid;
+    position: relative;
+    top: 35px;
+    width: 270px;
+    /* border:  2px solid black; */
+    height: 75px;
+}
+
+.phone-number input{
+  border: 1px solid rgb(196, 196, 196);
+    outline: none;
+    border-radius: 8px;
+    height: 35px;
+    font-size: 17px;
+}
+
+.phone-number input:focus{
+      border: 2px solid rgba(0, 51, 255, 0.804);
+}
+
+.edit-profile-heading{
+    /* border: 2px solid black; */
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    top: 25px;
+}
+
+.bottum-section{
+    display: grid;
+    height: 300px;
+    position: relative;
+    top: -10px;
+}
+
+.bottum-section input{
+    border-radius: 8px;
+  border: 1px solid rgb(196, 196, 196);
+    outline: none;
+    height: 35px;
+    position: relative;
+    top: 5px;
+    font-size: 17px;
+}
+
+.bottum-section label{
+    position: relative;
+    top: 5px;
+}
+
+.bottum-section input:focus{
+  border: 2px solid rgba(0, 51, 255, 0.804);
+}
+
+.bottum-section button{
+    position: relative;
+    top: 15px;
+    border-radius: 8px;
+    background-color: blue;
+    color: white;
+    border: none;
+    height: 40px;
+}
+
+.bottum-section button:hover{
+  cursor: pointer;
+  box-shadow: 1px 1px 1px 1px black;
+}

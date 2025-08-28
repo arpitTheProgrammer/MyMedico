@@ -1,0 +1,179 @@
+.doc-navbar{
+    /* border: 2px solid black; */
+    display: flex;
+    width: 900px;
+    height: 150px;
+    position: relative;
+    left: 50px;
+}
+
+.left-section{
+    position: relative;
+    left: 100px;
+    /* border: 2px solid black; */
+    width: 120px;
+    height: 80px;
+    color: blue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.left-section h1{
+    position: relative;
+    top: 4px;
+}
+
+.center-section{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid black; */
+    left: 350px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 50px;
+    top: 13px;
+}
+
+.center-section button{
+    height: 40px;
+    width: 200px;
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+}
+
+.center-section button:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+.input-search{
+    position: relative;
+    /* border: 2px solid black; */
+    height: 50px;
+    top: 70px;
+    left: -220px;
+    width: 700px;
+}
+
+.input-search input{
+    width: 320px;
+    height: 35px;
+    margin-top: 5px;
+    border-radius: 10px;
+  border: 1px solid rgb(196, 196, 196);
+  outline: none;
+}
+
+.input-search input:focus{
+    border: 1.5px solid blue;
+    font-size: 18px;
+    text-align: center;
+}
+.input-search button{
+    height: 40px;
+    width: 200px;
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    position: relative;
+    left: 45px;
+}
+
+.input-search button:hover{
+        cursor: pointer;
+    box-shadow: 1px 1px 1px 1px black;
+}
+.right-section{
+    position: relative;
+    left: -120px;
+    top: -134px;
+    float: right;
+    width: 100px;
+    /* border: 2px solid black; */
+    text-align: center;
+    height: 80px;
+}
+.right-section img{
+    height: 100px;
+    position: relative;
+    top: -10px;
+    border-radius: 50%;
+}
+
+.right-section p{
+    /* border: 2px solid black; */
+    position: relative;
+    top: -30px;
+    color: blue;
+}
+
+.head-booked{
+    position: relative;
+    left: 148px;
+    font-size: 28px;
+    top: -40px;
+    /* border: 2px solid black; */
+    width: 400px;
+}
+
+
+.patient-list{
+    position: relative;
+    left: 150px;
+    top: -50px;
+    width: 900px;
+    /* border: 2px solid black; */
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.lists{
+  border: 1px solid rgb(196, 196, 196);
+  border-radius: 5px;
+    margin: 10px;
+}
+
+.lists p{
+    position: relative;
+    left: 10px;
+    /* border: 2px solid black; */
+    width: 500px;
+}
+
+.pat-name{
+    /* border: 2px solid black; */
+    width: 500px;
+}
+
+.accept-reject-option{
+    /* border: 2px solid black; */
+    width: 100px;
+    float: right;
+    position: relative;
+    top: -40px;
+    left: -20px;
+}
+
+.btn-done{
+    border: none;
+    height: 30px;
+}
+.btn-reject{
+    border: none;
+    height: 30px;
+    margin-left: 10px;
+    width: 40px;
+}
+
+.btn-done:hover{
+    cursor: pointer;
+    border-radius: 10px;
+}
+.btn-reject:hover{
+        cursor: pointer;
+    border-radius: 10px;
+}

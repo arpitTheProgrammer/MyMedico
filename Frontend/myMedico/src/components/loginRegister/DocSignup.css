@@ -1,0 +1,103 @@
+.container-doc-signup{
+        position: relative;
+    left: 363px;
+    width: 430px;
+    display: flex;
+    top: 10px;
+    height: 460px;
+    border-radius: 20px;
+    background-color: aliceblue;
+    
+}
+
+.signup-input-section{
+    position: relative;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.signup-input-section input{
+    position: absolute;
+    /* z-index: -1; */
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    border-radius: 5px;
+    border: 1px solid rgb(196, 196, 196);
+      font-size: 1rem;
+     box-sizing: border-box;
+}
+
+.signup-email{
+    position: relative;
+    top: 100px;
+}
+.signup-password{
+    position: relative;
+    top: 150px;
+}
+
+.confirm-password{
+    position: relative;
+    top: 200px;
+}
+
+.signup-form h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.signup-btn{
+    position: relative;
+    top: 250px;
+            width: 300px;
+        height: 45px;
+    background-color: rgba(0, 51, 255, 0.804);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.signup-btn:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+.login-option{
+    position: relative;
+    top: 250px;
+}
+
+.login-option:hover{
+    cursor: pointer;
+}
+
+.fullname{
+    width: 50%;
+}
+
+.hospital-name{
+    width: 50%;
+    position: relative;
+    top: 50px;
+}
+
+.error-message{
+    position: relative;
+    top: 408px;
+    left: -330px;
+    text-align: center;
+    font-size: 17px;
+    color: red;
+    /* border: 2px solid black; */
+    height: 30px;
+    width: 339px;
+}
+.success-message{
+    position: relative;
+    top: 408px;
+    left: -330px;
+    text-align: center;
+    font-size: 17px;
+    color: green;
+    /* border: 2px solid black; */
+    height: 30px;
+    width: 339px;
+}

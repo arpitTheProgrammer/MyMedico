@@ -1,0 +1,117 @@
+.container-doc-login {
+  position: relative;
+  left: 380px;
+  width: 430px;
+  display: flex;
+  top: 100px;
+
+  height: 350px;
+  border-radius: 20px;
+  background-color: aliceblue;
+}
+
+.login-logo {
+  position: relative;
+  height: 80px;
+  /* top: 90px;
+    left: ; */ 
+}
+.login-input-section {
+  position: relative;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.login-form h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  top: -5px;
+}
+.input-logo {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  top: 20px;
+  height: 30px;
+  transform: translateY(-50%);
+  z-index: +1;
+  pointer-events: none;
+}
+
+.login-input-section input {
+  position: absolute;
+  /* z-index: -1; */
+  width: 300px;
+  padding: 10px 10px 10px 40px;
+  border-radius: 5px;
+  border: 1px solid rgb(196, 196, 196);
+  font-size: 1rem;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.login-input-section input:focus {
+  border: 2px solid rgba(0, 51, 255, 0.804);
+}
+.password {
+  position: relative;
+  top: 50px;
+}
+.login-btn {
+  width: 300px;
+  height: 45px;
+  position: relative;
+  top: 100px;
+  background-color: rgba(0, 51, 255, 0.804);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.login-btn:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 1px 1px black;
+}
+
+.register-option {
+  position: relative;
+  top: 100px;
+  color: rgba(0, 0, 0, 0.811);
+}
+
+.register-option:hover {
+  cursor: pointer;
+}
+.forget-password {
+  position: relative;
+  top: 52px;
+  color: rgba(0, 0, 0, 0.811);
+  float: right;
+}
+
+.forget-password:hover {
+  cursor: pointer;
+}
+
+.login-success-message{
+    position: relative;
+    top: 280px;
+    left: -330px;
+    text-align: center;
+    font-size: 17px;
+    color: green;
+    /* border: 2px solid black; */
+    height: 30px;
+    width: 339px;
+}
+
+.login-error-message{
+      position: relative;
+    top: 280px;
+    left: -330px;
+    text-align: center;
+    font-size: 17px;
+    color: red;
+    /* border: 2px solid black; */
+    height: 30px;
+    width: 339px;
+}

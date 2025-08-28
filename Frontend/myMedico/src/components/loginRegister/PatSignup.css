@@ -1,0 +1,22 @@
+.pat-error-message{
+      position: relative;
+    top: 280px;
+    left: -330px;
+    text-align: center;
+    font-size: 17px;
+    color: red;
+    /* border: 2px solid black; */
+    height: 20px;
+    width: 320px;  
+}
+.pat-success-message{
+          position: relative;
+    top: 280px;
+    left: -330px;
+    text-align: center;
+    font-size: 17px;
+    color: green;
+    /* border: 2px solid black; */
+    height: 20px;
+    width: 320px; 
+}

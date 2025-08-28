@@ -1,0 +1,84 @@
+.patient-login {
+  position: relative;
+  left: 380px;
+  width: 420px;
+  display: flex;
+  
+  top: 50px;
+  height: 340px;
+  border-radius: 20px;
+  background-color: aliceblue;
+}
+
+.patient-login input {
+  height: 40px;
+  /* display: flex;  */
+  margin: 10px;
+  position: relative;
+  left: -10px;
+  justify-content: center;
+  align-items: center;
+  width: 292px;
+  font-size: 1rem;
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid gray;
+  top: -10px;
+}
+
+.patient-login input:focus{
+    border: 2px solid rgba(0, 51, 255, 0.804);
+}
+.patient-login button {
+  height: 45px;
+  position: relative;
+  background-color: rgba(0, 51, 255, 0.804);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.patient-login button:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+.petient-login h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  top: -5px;
+}
+
+.newUser {
+  position: relative;
+}
+
+.create-acc:hover{
+    cursor: pointer;
+}
+
+
+.pat-login-error-message{
+        position: relative;
+    top: 250px;
+    left: -330px;
+    text-align: center;
+    font-size: 17px;
+    color: red;
+    /* border: 2px solid black; */
+    height: 20px;
+    width: 320px;  
+}
+
+.pat-login-success-message{
+          position: relative;
+    top: 250px;
+    left: -330px;
+    text-align: center;
+    font-size: 17px;
+    color: green;
+    /* border: 2px solid black; */
+    height: 20px;
+    width: 320px;  
+}

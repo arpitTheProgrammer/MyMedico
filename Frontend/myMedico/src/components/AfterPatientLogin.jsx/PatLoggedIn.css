@@ -1,0 +1,262 @@
+.pat-loggedin-container{
+    border: 0.1px solid blue;
+    box-shadow: 1px 1px 1px 0.1px rgb(207, 207, 207);
+    height: 90vh;
+    width: 1100px;
+    position: relative;
+    left: 25px;
+    top: 10px;
+    border-radius: 10px;
+}
+
+.pat-navigation{
+    border: 1px solid blue;
+    height: 50px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: rgb(74, 74, 254);
+    display: flex;
+}
+
+.pat-search-bar{
+    /* border: 1px solid black; */
+    height: 100px;
+    position: relative;
+    top: 25px;
+    /* margin-top: 30px; */
+}
+
+.cards{
+    /* border: 1px solid black; */
+    height: 230px;
+    position: relative;
+    top: 30px;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+}
+
+.pat-left-section{
+    /* border: 2px solid black; */
+    width: 300px;
+    height: 50px;
+    display: flex;
+    color: white;
+    position: relative;
+    left: 50px;
+}
+.pat-left-section h1{
+    position: relative;
+    left: 10px;
+    top: -18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+}
+.pat-left-section img{
+    height: 60px;
+    position: relative;
+    top: -4px;
+}
+
+.pat-center-section{
+    display: flex;
+    gap: 60px;
+    color: white;
+    position: relative;
+    /* border: 1px solid black; */
+    position: relative;
+    left: 50px;
+}
+
+.pat-center-section p:hover{
+    cursor: pointer;
+}
+
+.pat-right-section{
+    position: relative;
+    left: 200px;
+    /* top: 15px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.pat-right-section button{
+ height: 30px;
+ width: 80px;
+ background-color: rgba(1, 1, 70, 0.447);
+ border: none;
+ border-radius: 8px;
+ color: white;
+}
+
+.pat-right-section button:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 0.342);
+}
+
+.pat-search-bar h1{
+    color: blue;
+    position: relative;
+    top: -15px;
+    left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.doctor-search-option {
+    position: relative;
+    left: 10px;
+    top: -25px;
+    /* border: 2px solid black; */
+    width: 1100px;
+}
+
+.doctor-search-option input{
+    width: 900px;
+    height: 35px;
+    position: relative;
+    left: 10px;
+    border-radius: 8px;
+  border: 1px solid rgb(196, 196, 196);
+  outline: none;
+}
+
+.doctor-search-option input:focus{
+    border: 1.5px solid blue;
+}
+
+.doctor-search-option button{
+    position: relative;
+    left: 30px;
+    height: 40px;
+    width: 150px;
+    background-color: rgb(74, 74, 254);
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+.doctor-search-option button:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 1px black;
+}
+.card{
+    border: 1.5px solid blue;
+    width: 200px;
+    border-radius: 15px;
+}
+
+.card-div{
+    /* border: 1px solid blue; */
+    border-radius: 15px 15px 0px 0px;
+    background-color: rgb(74, 74, 254);
+    font-size: 35px;
+    text-align: center;
+    height: 55px;
+    color: white;
+}
+
+.profile-section{
+    /* border: 1px solid black; */
+    position: relative;
+    top: 10px;
+    display: flex;
+}
+.profile-section img{
+    position: relative;
+    height: 70px;
+}
+
+.pat-detail{
+    /* border: 1px solid black; */
+    display: grid;
+    height: 60px;
+}
+
+.pat-detail-problem{
+    position: relative;
+    top: -40px;
+    color: rgb(82, 82, 82);
+}
+
+.pat-detail-gender{
+    position: relative;
+    top: -70px;
+    color: rgb(82, 82, 82);
+}
+
+.pat-detail h3{
+    position: relative;
+    top: -10px;
+    font-size: 17px;
+    text-align: center;
+    color: rgb(74, 74, 254);
+}
+
+.pat-email{
+    text-align: center;
+    position: relative;
+    top: 0px;
+    color: rgb(82, 82, 82);
+    /* border: 2px solid black; */
+    /* width: 150px; */
+    /* left: 23px; */
+    overflow-wrap: break-word;
+    font-size: 15px;
+    margin-bottom: -4px;
+}
+
+.pat-edit-profile-btn{
+    height: 33px;
+    width: 150px;
+    position: relative;
+    left: 25px;
+    top: 5px;
+    border-radius: 8px;
+    border: 1.5px solid blue;
+    background-color: transparent;
+    color: blue;
+    font-size: 18px;
+}
+
+.pat-edit-profile-btn:hover{
+    cursor: pointer;
+}
+
+.fileLogo{
+    height: 70px;
+    position: relative;
+    left: 65px;
+    top: 20px;
+}
+
+.card h4{
+    text-align: center;
+    overflow-wrap: break-word;
+    font-size: 20px;
+}
+
+.card-report-section{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.card-report-section button{
+    height: 33px;
+    width: 150px;
+    font-size: 16px;
+    border: 1.5px solid blue;
+    background-color: transparent;
+    color: blue;
+    border-radius: 8px;
+}
+
+.card-report-section button:hover{
+    cursor: pointer;
+
+}
+.card-report-section img{
+    height: 70px;
+}

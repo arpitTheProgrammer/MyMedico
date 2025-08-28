@@ -1,0 +1,81 @@
+.container-left{
+    position: relative;
+    top: 150px;
+    /* border: 1px solid black; */
+    width: 400px;
+    left: 170px;
+    height: auto;
+}
+.heading span{
+    position: absolute;
+    margin: 10px;
+    left: -10px;
+    /* top: 100px; */
+    display: grid;
+    color: blue;
+}
+
+.heading{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container-left p{
+    position: relative;
+    top: 50px;
+    color: rgb(58, 58, 58);
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.container-right{
+    float: right;
+    position: relative;
+    left: -200px;
+    /* display: grid; */
+    /* border: 2px solid black; */
+    top: -40px;
+    width: 230px;
+}
+
+.docter-section{
+    display: grid;
+}
+
+.docter-section button{
+    height: 40px;
+    margin: 10px;
+    position: relative;
+    left: -10px;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.doc-login{
+    background-color: rgba(0, 51, 255, 0.804);
+    color: white;
+}
+
+.patient-section{
+    display: grid;
+    position: relative;
+    top: 30px;
+}
+
+.patient-section button{
+        height: 40px;
+    margin: 10px;
+    position: relative;
+    left: -10px;
+    border: 0px;
+    border-radius: 5px;
+}
+.pat-login{
+    background-color: rgba(0, 51, 255, 0.804);
+    color: white;
+}
+
+
+.container-right button:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 1px black;
+}
