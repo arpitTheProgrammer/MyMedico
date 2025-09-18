@@ -9,18 +9,18 @@ const PatLogin = () => {
   const navigate = useNavigate();
   const [successMessage, setSuccessMessage] = useState(null);
   const [errorMessage, setErrorMessage] = useState(null);
-  const [user, setUser] = useState(null);
+  const [patuser, setPatUser] = useState(null);
   const [formData, setFormData] = useState({
     phoneNumber: "",
   });
 
 useEffect(() => {
-  const storedPatUser = localStorage.getItem("user");
+  const storedPatUser = localStorage.getItem("patuser");
   if (storedPatUser) {
     navigate("/pat-home", { replace: true });
   }
 }, [navigate]);
-  if (user) {
+  if (patuser) {
      navigate("/pat-home");
   }
   const HandleChange = (e) => {
@@ -54,7 +54,7 @@ useEffect(() => {
       if (response.ok) {
         setSuccessMessage("LOGIN SUCCESSFULLY");
         localStorage.setItem("token", data.token);
-        localStorage.setItem("user", JSON.stringify(data.user));
+        localStorage.setItem("patuser", JSON.stringify(data.user));
         navigate("/pat-home");
       } else if (!payload.Number) {
         setErrorMessage("Please fill All the Block Correctly");

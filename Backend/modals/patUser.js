@@ -13,6 +13,17 @@ const patSchema = new mongoose.Schema({
     varificationCode: {
         type: String
     },
+    patLocation: {
+        type: String,
+        default: null
+    },
+    patGender: {
+        type: String,
+        default: null
+    },
+    email: {
+        type: String
+    },
     isLoggedin: {
         type: Boolean,
         default: false

@@ -80,7 +80,10 @@ const HandlePatLogin = async(req, res) => {
             user: {
                 id: user._id,
                 fullName: user.patName || user.fullName,
-                phoneNumber: user.phoneNumber
+                phoneNumber: user.phoneNumber,
+                patLocation: user.patLocation,
+                patGender: user.patGender,
+                email: user.email
             }
         });
     } catch(err){
@@ -88,6 +91,24 @@ const HandlePatLogin = async(req, res) => {
     }
 }
 
+const HandleUpdatePatUser = async (req, res) => {
+    try{
+        const{fullName, phoneNumber, patLocation, patGender, isLoggedin, email } = req.body;
+        const user = await patUser.findOne({phoneNumber})
+        if(!user){
+            return res.status(400).json({message: "User Not Found"})
+        }
+    if (fullName) user.fullName = fullName;
+    if (patLocation) user.patLocation = patLocation;
+    if (patGender) user.patGender = patGender;
+    if (email) user.email = email;
+    if (typeof isLoggedin !== "undefined") user.isLoggedin = isLoggedin;
+        await user.save();
+        return res.status(200).json({message: "USER UPDATED"})
+    } catch(err) {
+        return res.status(400).json({message: "Unable to Update User", err})
+    }
+}
 const HandleLogout = async(req, res) => {
     try{
         const {email} = req.body;
@@ -106,8 +127,8 @@ const HandleLogout = async(req, res) => {
 
 const HandlePatLogout = async(req, res) => {
     try{
-        const {email} = req.body;
-        const user = await patUser.findOne({email})
+        const {phoneNumber} = req.body;
+        const user = await patUser.findOne({phoneNumber})
         if(!user){
             return res.status(400).json({message: "USER NOT EXISTS"})
         }
@@ -144,5 +165,6 @@ module.exports = {
     HandlePatLogin,
     HandleLogout,
     HandleUpdate,
-    HandlePatLogout
+    HandlePatLogout,
+    HandleUpdatePatUser
 }

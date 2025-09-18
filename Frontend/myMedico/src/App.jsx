@@ -12,6 +12,8 @@ import DocLoggedIn from './components/AfterLogged/DocLoggedIn'
 import DocProfile from './components/AfterLogged/DocProfile'
 import EditProfile from './components/AfterLogged/EditProfile'
 import PatLoggedIn from './components/AfterPatientLogin.jsx/PatLoggedIn'
+import PatProfile from './components/AfterPatientLogin.jsx/PatProfile'
+import SearchDoctor from './components/AfterPatientLogin.jsx/SearchDoctor'
 
 function App() {
 
@@ -28,6 +30,8 @@ function App() {
         <Route exact path='/doc-profile' element={<DocProfile/>} />
         <Route exact path='/edit-profile' element={<EditProfile/>} />
         <Route exact path='/pat-home' element={<PatLoggedIn/>} />
+        <Route exact path='/edit-pat-profile' element={<PatProfile/>} />
+        <Route exact path='/search-doctor' element={<SearchDoctor/>}/>
       </Routes>
     </BrowserRouter>
     </>
